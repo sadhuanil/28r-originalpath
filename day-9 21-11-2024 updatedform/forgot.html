@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forgot page</title>
+</head>
+<body>
+    <center>
+    <form action="./passwordreset.html" method="get" target="_self" autocomplete="off">
+        <label for="username">username :</label>
+        <input type="text" name="username" id="username" placeholder="username" required pattern="[a-zA-Z]+" title="characters must be alphabets ex:abc" ><br><br>
+        <label for="password">password :</label>
+        <input type="password" name="password" id="password" placeholder="password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&*!])(?=.*[\d]).+" maxlength="16" minlength="8"><br><br>
+        <label for="number">otp :</label>
+        <input type="number" name="number" id="number" placeholder="otp" required pattern="[/d]+" maxlength="4" minlength="3" ><br>
+        <p><i>your otp is ="1234"</i></p>
+       <pre>    <input type="submit" value="reset password"></pre>
+    </form>
+    </center>
+    
+</body>
+</html>

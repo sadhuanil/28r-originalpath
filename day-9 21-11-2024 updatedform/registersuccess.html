@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>successfully Registered</title>
+</head>
+<body>
+    <center>
+    <h2>registration successfully</h2>
+    <form action="./loginsuccess.html" method="get" autocomplete="off" target="_self" >
+        <label for="username">username :</label>
+        <input type="text" name="username" id="username" placeholder="username" required pattern="[a-zA-Z]+" title="characters must be alphabets ex;abc"> <br><br>
+
+        <label for="password">password :</label>
+        <input type="password" name="password" id="password" placeholder="password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&*!])(?=.*[\d]).+" maxlength="16" minlength="8""><br><br>
+        <input type="submit" value="login">
+    </form>
+    
+</body>
+</html>
